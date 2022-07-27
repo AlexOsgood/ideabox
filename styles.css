@@ -23,17 +23,16 @@ p {
  font-size: 12px;
  color: #BFBFDD;
  margin-top: -9px;
+ margin-bottom: 29px;
  padding-left: 16px;
  padding-top: 22px;
   }
 
 
-button{
+.show-starred {
   background-color: #5356A4;
+  border: 2px solid #353567;
   color: #EAEAF4;
-  border-radius: 4px;
-  border-color: #1f1f3D;
-  border: 1px;
   padding-left: 0px;
   padding-right: 0px;
   width: 190px;
@@ -50,17 +49,89 @@ button{
 .user-input{
   display: flex;
   flex-direction: column;
-  justify-content: ;
-  align-items: ;
+  justify-content: center;
+  align-items:center ;
   background-color:#A9AAD2;
+  border-style: solid;
+  border-color: #353567;
+  border-radius: 4px;
+  border-width: thin;
   width: 700px;
   height: 400px;
 }
+
+
+
+#title-input{
+  width: 350px;
+  height: 40px;
+  margin-bottom: 18px;
+  margin-top: 5px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #7f7fb4;
+}
+
+.body-label{
+ padding-bottom: 5px;
+
+}
+
+#body-input{
+  width: 350px;
+  height: 80px;
+  margin-bottom: 17px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #7f7fb4;
+
+}
+
+.save-button{
+  background-color: #353567;
+  font-family: open, sans-serif;
+  font-size: 15px;
+  color: #EAEAF4;
+  margin-bottom: 35px;
+  width: 359px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+
+.whole-search{
+display: flex;
+border-style: solid;
+border-color: #353567;
+border-radius: 4px;
+width: 356px;
+margin-left: 0px;
+margin-bottom: 25px;
+}
+
+#search-input {
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 300px;
+  margin-bottom: -1px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+
+
+.magni-glass{
+  background-color: #353567;
+  padding: 14px;
+  width: 20px;
+  length: 20px;
+  margin-top: -2px;
+  margin-bottom: -18px;
+  margin-left: 0px;
+}
+
 .idea-title-body{
   display: flex;
   flex-direction: column;
-}
-
-#title-input{
-  width: 300px;
+   color: #1f1f3D;
 }
