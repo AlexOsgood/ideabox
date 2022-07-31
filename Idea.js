@@ -6,14 +6,19 @@ class Idea {
     this.star = false
   }
 
-  function saveToStorage() {
-    }
-
-  function deleteFromStorage() {
-    }
-
-  function updateIdea() { //should update the idea's starred state
-    }
+  // function saveToStorage(newIdea) {
+  //   savedIdeas.push(newIdea)
+  // }
 
 
 }
+
+//
+//  function deleteFromStorage() {
+//     }
+//
+//   function updateIdea() { //should update the idea's starred state
+//     }
+//
+//
+// }
