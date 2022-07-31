@@ -18,7 +18,7 @@ var inputForm = document.querySelector('#input-form')
 var newIdea
 var savedIdeas = []
 
-window.addEventListener('load', removeIdeaTemplate)
+  window.addEventListener('load', errorHandler)
 saveButton.addEventListener('click', saveNewIdea)
 titleInput.addEventListener('input', errorHandler)
 bodyInput.addEventListener('input', errorHandler)
@@ -27,10 +27,7 @@ bodyInput.addEventListener('input', errorHandler)
 
 
 
-function loadDisableButton() {
-  document.getElementById("save-idea-button").disable = true
-  errorHandler()
-}
+
 
 
 
@@ -38,15 +35,11 @@ function loadDisableButton() {
 function errorHandler() {
   if (titleInput.value.length > 0 && bodyInput.value.length > 0) {
       saveButton.removeAttribute("disabled")
+      saveButton.style.cursor = "auto"
   } else {
-
     saveButton.setAttribute("disabled", "disabled")
-
+    saveButton.style.cursor = "none"
   }
-}
-function removeIdeaTemplate() {
-  errorHandler()
-
 }
 
 
@@ -55,12 +48,11 @@ function removeIdeaTemplate() {
 //ideaTileContainer.innerHTML = savedIdeas
 
 function saveNewIdea() {
-
 newIdea = new Idea(titleInput.value, bodyInput.value)
 ideaCardTitle.innerText = newIdea.title
 ideaCardBody.innerText = newIdea.body
 savedIdeas.push(newIdea)
-
+console.log('updates data model',savedIdeas)
  ideaTileContainer.innerHTML +=
  `<div class='idea-card'><a href="#">
  <section class='star-banner'>
@@ -76,19 +68,15 @@ savedIdeas.push(newIdea)
  </section>
  </a>
  </div>`
-
+ titleInput.value = null
+ bodyInput.value = null
+errorHandler()
 titleInput.value = ''
 bodyInput.value = ''
 }
 
 
-function errorStateTitle() {
-saveButton.style.backgroundColor = '#353567'
-}
 
-function errorStateBody() {
-saveButton.style.backgroundColor = '#353567'
-}
 
 // #353567
 
