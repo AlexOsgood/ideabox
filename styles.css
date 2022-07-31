@@ -91,7 +91,7 @@ margin-top: 100px;
 }
 
 .save-button{
-  background-color: #7a7aeb;
+  background-color: #1F1F3D;
   font-family: open, sans-serif;
   font-size: 15px;
   color: #EAEAF4;
@@ -101,6 +101,9 @@ margin-top: 100px;
   margin-top: 5px;
 }
 
+button:disabled{
+  background-color: #ADD8E6;
+}
 
 .whole-search{
 display: flex;
@@ -109,7 +112,7 @@ border-color: #353567;
 border-radius: 4px;
 width: 356px;
 margin-left: 0px;
-margin-bottom: 25px;
+margin-bottom: 123px;
 }
 
 #search-input {

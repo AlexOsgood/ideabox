@@ -13,23 +13,37 @@ var ideaCardTitle = document.querySelector('#title-idea')
 var ideaCardBody = document.querySelector('#body-idea')
 var userInputSelector = document.querySelector("#title-input","#body-input")
 var ideaTileContainer = document.querySelector('.tile-box')
+var inputForm = document.querySelector('#input-form')
 
 var newIdea
 var savedIdeas = []
 
 window.addEventListener('load', removeIdeaTemplate)
 saveButton.addEventListener('click', saveNewIdea)
-titleInput.addEventListener('InputEvent', errorStateTitle)
-bodyInput.addEventListener('InputEvent', errorStateBody)
+titleInput.addEventListener('input', errorHandler)
+bodyInput.addEventListener('input' errorHandler)
 
 
 
 
 
+function loadDisableButton() {
+  document.getElementById("save-idea-button").disable = true
+  errorHandler()
+}
 
 
 
 
+function errorHandler() {
+  if (titleInput.value.length > 0 && bodyInput.value.length > 0) {
+      saveButton.removeAttribute("disabled")
+  } else {
+
+    saveButton.setAttribute("disabled", "disabled")
+
+  }
+}
 
 
 
