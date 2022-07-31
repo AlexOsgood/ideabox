@@ -21,7 +21,7 @@ var savedIdeas = []
 window.addEventListener('load', removeIdeaTemplate)
 saveButton.addEventListener('click', saveNewIdea)
 titleInput.addEventListener('input', errorHandler)
-bodyInput.addEventListener('input' errorHandler)
+bodyInput.addEventListener('input', errorHandler)
 
 
 
@@ -44,14 +44,15 @@ function errorHandler() {
 
   }
 }
+function removeIdeaTemplate() {
+  errorHandler()
+
+}
 
 
 
 
 //ideaTileContainer.innerHTML = savedIdeas
-function removeIdeaTemplate() {
-  ideaCard.style.display = 'none'
-}
 
 function saveNewIdea() {
 
