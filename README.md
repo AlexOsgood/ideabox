@@ -1,8 +1,8 @@
 # ideabox
 This project was made by
-Thomas Peterson - https://www.linkedin.com/in/thomas-peterson-web-dev/
-Angie Staffieri - https://www.linkedin.com/in/angie-staffieri-372aa07/
-Alex Osgood - https://www.linkedin.com/in/alex-osgood-05258628/
+- Thomas Peterson - https://www.linkedin.com/in/thomas-peterson-web-dev/
+- Angie Staffieri - https://www.linkedin.com/in/angie-staffieri-372aa07/
+- Alex Osgood - https://www.linkedin.com/in/alex-osgood-05258628/
 
 The purpose of this project is to make a website where you can make your own idea tiles with a title and body of your choosing. You should be able favorite tiles (showing a red star) and you should be able to delete stored tiles.
 
