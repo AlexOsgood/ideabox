@@ -1,10 +1,4 @@
 # ideabox
-First group project - mod1
-Overview of project and goals, technologies used, your code architecture, future features, challenges, wins, and any other reflections
-Screenshots or video or gif of your functioning app
-collaborators
-anything else you think an employer would be interested in
-
 This project was made by
 Thomas Peterson
 - https://www.linkedin.com/in/thomas-peterson-web-dev/
