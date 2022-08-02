@@ -6,19 +6,20 @@ class Idea {
     this.star = false
   }
 
-  // function saveToStorage(newIdea) {
-  //   savedIdeas.push(newIdea)
-  // }
+   updateIdea() { 
+    if(this.star === false) {
+      this.star = true
+    } else if(this.star === true) {
+      this.star = false
+    }
+ }
 
+
+
+  saveToStorage() {}
+
+
+
+  deleteFromStorage() {}
 
 }
-
-//
-//  function deleteFromStorage() {
-//     }
-//
-//   function updateIdea() { //should update the idea's starred state
-//     }
-//
-//
-// }

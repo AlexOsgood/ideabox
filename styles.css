@@ -1,34 +1,33 @@
-body{
+body {
 font-family: open, sans-serif  ;
 display: flex;
 margin: 0px;
 }
-.nav-bar{
+
+.nav-bar {
   display: flex;
   flex-direction: column;
   background-color:#1f1f3D;
   height: 920px;
   width: 254px;
 }
-h3{
+
+h3 {
   font-family: open, sans-serif, bold;
   color: #EAEAF4;
   background-color: ;
   padding-left: 16px;
 }
 
-
 p {
  border-top: 1px solid #353567;
- background-color: ;
  font-size: 12px;
  color: #BFBFDD;
  margin-top: -9px;
  margin-bottom: 29px;
  padding-left: 16px;
  padding-top: 22px;
-  }
-
+}
 
 .show-starred {
   background-color: #5356A4;
@@ -36,6 +35,7 @@ p {
   color: #EAEAF4;
   padding-left: 0px;
   padding-right: 0px;
+  border-bottom: 1px solid #353567;
   width: 190px;
   height: 46px;
   margin-left: 16px;
@@ -46,8 +46,12 @@ p {
   font-size: 15px;
 }
 
+.the-damn-line {
+border-bottom: 1px solid #353567;
+padding-bottom: 20px;
+}
 
-.user-input{
+.user-input {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -61,11 +65,11 @@ width: 900px;
 height: 400px;
 }
 
-.title-label{
+.title-label {
 margin-top: 100px;
 }
 
-#title-input{
+#title-input {
   width: 350px;
   height: 40px;
   margin-bottom: 18px;
@@ -75,12 +79,12 @@ margin-top: 100px;
   border-color: #7f7fb4;
 }
 
-.body-label{
+.body-label {
  padding-bottom: 5px;
 
 }
 
-#body-input{
+#body-input {
   width: 350px;
   height: 80px;
   margin-bottom: 17px;
@@ -90,7 +94,7 @@ margin-top: 100px;
 
 }
 
-.save-button{
+.save-button {
   background-color: #1F1F3D;
   font-family: open, sans-serif;
   font-size: 15px;
@@ -101,11 +105,11 @@ margin-top: 100px;
   margin-top: 5px;
 }
 
-button:disabled{
+button:disabled {
   background-color: #ADD8E6;
 }
 
-.whole-search{
+.whole-search {
 display: flex;
 border-style: solid;
 border-color: #353567;
@@ -155,15 +159,24 @@ margin-bottom: 123px;
 }
 
 .idea-card {
-
-  background-color: #FFFFFF;
-  width: 166px;
-  height: 176px;
-  margin-top:5px ;
-  margin-left: -5px;
-  margin-right:-5px;
-  border: thin solid #353567;
+ background-color: #FFFFFF;
+ width: 166px;
+ height: 176px;
+ margin-top:5px ;
+ margin-left: -5px;
+ margin-right:-5px;
+ border: thin solid #353567;
   }
+
+.new-idea-card {
+background-color: #FFFFFF;
+width: 166px;
+height: 176px;
+margin-top:5px ;
+margin-left: -5px;
+margin-right:-5px;
+border: thin solid #353567;
+    }
 
 .star-banner{
  display: flex;
@@ -172,34 +185,23 @@ margin-bottom: 123px;
  width: 167px;
  height: 23px;
  border: none;
-
 }
-
 
 .star {
-  width:25px;
+  width:20px;
 }
 
-.red-star{
-display: none;
+.red-star {
+display: none ;
 width: 20px;
 
 }
 
-
 .delete-x{
-  width: 17px;
+  width: 23px;
   margin-left: 126px;
-  padding-top: 3px;
+  padding-top: -6px;
   padding-right: 3px;
-}
-
-
-#delete-button {
-  background-color: ;
-  stroke: white;
-  width: 20px;
-  margin-left: 119px;
 }
 
 .idea-title {
@@ -236,6 +238,7 @@ margin-top: 46px;
 border: none;
 margin-left: -1px;
 }
+
 .comment-icon {
   background-color: #5356A4;
   border:none;
